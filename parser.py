@@ -6,15 +6,12 @@ from collections.abc import Callable
 import ast
 import inspect
 import textwrap
-from typing import Any
-
 import dill
 
 from latexify import exceptions
 
 
 def parse_function(fn: Callable[..., Any]) -> ast.FunctionDef:
-    """Parses given function.
 
     Args:
         fn: Target function.
